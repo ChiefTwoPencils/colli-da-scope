@@ -39,12 +39,9 @@ implements Iterable {
     public Tracker() {
         // Assigns the tree set and passes in an anonymous comparator for
         // prioritization.
-        collisions = new TreeSet<>((Collision one, Collision theOther) -> {
-            int first = one.getPriority();
-            int second = theOther.getPriority();
-            return (first < second) ? 1 :
-              (first > second) ? -1 : 0;
-        });
+        collisions = new TreeSet<>((Collision one, Collision theOther) ->
+          theOther.getPriority() - one.getPriority()
+        );
     }
 
     /**
