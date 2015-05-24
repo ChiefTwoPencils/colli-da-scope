@@ -15,10 +15,6 @@ public class Collision {
      */
     private ICollider b;
     /**
-     *  @see collidascope.Collider#getCollisionString(ICollider, ICollider)
-     */
-    private String collisionKey;
-    /**
      * The collision's priority on a scale from 0-5. The default value
      * (lowest) = 5. If no priority is specified for any collision the
      * priority has no impact on the order in which the collision is
