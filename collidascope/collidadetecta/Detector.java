@@ -53,6 +53,7 @@ public class Detector {
      * in the map based on @see getCollisionString.
      * @param a The first collider.
      * @param b The second collider.
+     * @param key The key to the detection function.
      * @return Did they collide?
      */
     public boolean detectCollision(ICollider a, ICollider b, String key) {

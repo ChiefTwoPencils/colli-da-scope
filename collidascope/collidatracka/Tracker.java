@@ -13,10 +13,10 @@ import java.util.function.Consumer;
  * collisions between colliders. It will disregard duplicate
  * collisions. It is the client's responsibility to ensure priorities
  * are set and to understand collisions are <em>handled</em> uni-
- * directionally (A -> B !=> B -> A). The tracking mechanism does
+ * directionally (A - B != B - A). The tracking mechanism does
  * not check for equivalent, but reversed, collisions. It is
  * assumed the <em>iteration</em> for collision detection is "smart"
- * and disallows the checking of B -> A given A -> B exists. In other
+ * and disallows the checking of B - A given A - B exists. In other
  * words, if the client does <em>not</em> prevent redundant/equivalent
  * collision detections neither does this code.
  *
