@@ -41,7 +41,7 @@ public class Collider {
      */
     public Collider(List<String> detectionKeys, List<BiFunction<ICollider, ICollider, Boolean>> detectionFunctions,
                     List<String> handlerKeys, List<BiConsumer<ICollider, ICollider>> handlerFunctions) {
-        super();
+        this();
         addDetectors(detectionKeys, detectionFunctions);
         addHandlers(handlerKeys, handlerFunctions);
     }
@@ -53,7 +53,7 @@ public class Collider {
      */
     public Collider(Map<String, BiFunction<ICollider, ICollider, Boolean>> detectors,
                     Map<String, BiConsumer<ICollider, ICollider>> handlers) {
-        super();
+        this();
         addDetectors(detectors);
         addHandlers(handlers);
     }
